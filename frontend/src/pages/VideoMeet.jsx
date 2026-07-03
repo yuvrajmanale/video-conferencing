@@ -13,7 +13,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import SendIcon from "@mui/icons-material/Send";
 import server from "../environment";
 
-const server_url = server;
+const server_url = server // Use the production server URL  
 
 var connections = {};
 var pendingIceCandidates = {};

@@ -1,7 +1,8 @@
+let IS_PROD = true;
 
+const server = IS_PROD  ? 
+    "https://quickmeet-fxmk.onrender.com" :
 
-const server = {
-    dev : "http://localhost:8000"
-}
+    "http://localhost:8000",
 
 export default server;
