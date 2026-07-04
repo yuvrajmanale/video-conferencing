@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
+import mobileImg from "../assets/mobile.png";
 
 export default function Landing() {
 
@@ -38,7 +39,7 @@ const router = useNavigate();
        </div>
        <div>
 
-   <img src="/mobile.png" alt="" />
+   <img src={mobileImg} alt="" />
 
        </div>
    </div>
