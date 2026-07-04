@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.Landingpagecontainer {
+.LandingpageContainer {
   width: 100%;
   min-height: 100vh;
   background: url("/background.png");
