@@ -1,9 +1,12 @@
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .Landingpagecontainer {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url("/background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +15,7 @@
 
 .Landingpagecontainer nav {
     padding-inline: 1.2rem;
-    padding-block:  1.6rem;
+    padding-block: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +23,16 @@
 
 .Landingpagecontainer nav h2 {
     font-size: 1.8rem;
-    font-size: 500;
+    font-weight: 500;
 }
 
 .Landingpagecontainer nav .navlist {
      display: flex;
-     gap : 1.6rem;
+     gap: 1.6rem;
      cursor: pointer;
 }
 
-.landingMainConatiner {
+.landingMainContainer {
     display: flex;
     justify-content: space-between;
     padding-inline: 3rem;
@@ -37,12 +40,11 @@
     align-items: center;
 }
 
-.landingMainConatiner > div:nth-child(1) {
+.landingMainContainer > div:nth-child(1) {
     font-size: 2rem;
- 
 }
 
-.landingMainConatiner > div:nth-child(1) div[role='button'] {
+.landingMainContainer > div:nth-child(1) div[role='button'] {
     background: #D97500;
     width: fit-content;
     padding: 1rem;
@@ -50,51 +52,13 @@
     margin-top: 1.8rem;
 }
 
-.landingMainConatiner > div:nth-child(1) div[role='button'] a {
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
 }
 
-
-.landingMainConatiner > div:nth-child(2) img {
-    height: 80vh;
+.landingMainContainer > div:nth-child(2) img {
+    max-height: 70vh;
     width: auto;
-}
-
-
-.navBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 20px;
-  text-align: center;
-
-}
-.meetContainer {
-  display: flex;
-  padding-inline: 20px;
-  height: 80vh;
-  gap: 10vw;
-  justify-content: center;
-}
-
-
-
-.leftPanel {
-  height: 100%;
-  display: flex;
-  align-items: center;
-
-}
-
-.rightPanel {
-  display: flex;
-  align-items: center;
-}
-
-.rightPanel > img {
-  width: 30vw;
-  height: auto;
-  border-radius: 20px;
 }
