@@ -12,6 +12,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
 import SendIcon from "@mui/icons-material/Send";
 import server from "../environment";
+ import "../styles/videoMeet.css";
 
 const server_url = server // Use the production server URL  
 
