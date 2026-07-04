@@ -5,60 +5,92 @@
 }
 
 .Landingpagecontainer {
-    width: 100%;
-    min-height: 100vh;
-    background: url("/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+  width: 100%;
+  min-height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
 }
 
+/* NAVBAR */
 .Landingpagecontainer nav {
-    padding-inline: 1.2rem;
-    padding-block: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Landingpagecontainer nav h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.Landingpagecontainer nav .navlist {
-     display: flex;
-     gap: 1.6rem;
-     cursor: pointer;
+.navlist {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
 }
 
+/* MAIN SECTION */
 .landingMainContainer {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 3rem;
-    height: 70vh;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: calc(100vh - 80px);
 }
 
+/* LEFT SIDE */
 .landingMainContainer > div:nth-child(1) {
-    font-size: 2rem;
+  max-width: 550px;
 }
 
-.landingMainContainer > div:nth-child(1) div[role='button'] {
-    background: #D97500;
-    width: fit-content;
-    padding: 1rem;
-    border-radius: 20px;   
-    margin-top: 1.8rem;
+.landingMainContainer h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
-.landingMainContainer > div:nth-child(1) div[role='button'] a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+.landingMainContainer h1 span {
+  color: #ff9839;
+}
+
+.landingMainContainer p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* BUTTON */
+.landingMainContainer div[role="button"] {
+  margin-top: 2rem;
+}
+
+.landingMainContainer a {
+  background: #ff9839;
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.landingMainContainer a:hover {
+  background: #e67e22;
+}
+
+/* RIGHT SIDE IMAGE */
+.landingMainContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingMainContainer > div:nth-child(2) img {
-    max-height: 70vh;
-    width: auto;
+  width: 350px;
+  transform: rotate(-10deg);
 }
